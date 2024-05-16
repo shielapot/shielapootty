@@ -1,0 +1,571 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    text-decoration: none;
+    list-style: none;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgb(#fcfbfbfe, #e7f1e7, #d9d9df);
+    backdrop-filter: blur(10px);
+    text-align: right;
+    z-index: 100;
+   
+    
+}
+.logo{
+    font-size: 25px;
+    color: orangered;
+    font-weight: 600;
+    transition: 0.3s ease;
+    font-family: cursive;
+    margin-left: -85%;
+    position: absolute;
+    animation: hackingText 10s infinite;
+}
+@keyframes hackingText {
+    0% {
+        opacity: 0;
+    }
+    25%{
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+    50% {
+        opacity: 0;
+    }
+    75%{
+        opacity: 1;
+        transform: translateY(-10%);
+    }
+    100%{
+        opacity: 0;
+}
+}
+
+.logo:hover{
+    color: orangered;
+    text-shadow: 0 0 25px #000000E3;
+                 
+transform: scale(1.1);
+
+}
+
+.logo span{
+    color: white;
+}
+
+.navbar a{
+    font-size: 20px;
+    color: whitesmoke;
+    font-weight: 500;
+    margin: 0 10px;
+    border-bottom: 3px solid transparent orangered;
+    transition: 0.3s ease;
+    text-align: center;
+    flex:1;
+    list-style: none;
+    
+    
+}
+
+.navbar a:hover{
+    color: #ff1f00;
+    border-bottom: 3px solid orangered;
+}
+
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12%;
+
+
+}
+.image{
+    margin-left: 60%;
+    position: absolute;
+    top: 25%;
+    border-radius: 20%;
+    box-shadow: 0 0 25px orangered;
+    border: 1px solid black;
+    width: 275px;
+    border-radius: 150px;
+    padding: 15px;              
+}
+.img-box img{
+    width: 300px;
+    height: 50%;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    animation: floatImage 5s infinite ease-in-out;
+}
+@keyframes floatImage {
+    0%{
+        transform: translate(-50%, -50%);
+    }
+    50%{
+        transform: translate(-50%, -55%);
+    }
+    100%{
+        transform: translate(-50%, -50%);
+    }
+    
+}
+
+
+.home-content{
+    max-width: 800px;
+    
+}
+
+.home-content h3{
+    font-size: 42px;
+    color: orangered;
+    position: absolute;
+    position: absolute;
+    margin-left:10%;
+    top: 30%;
+    font-family: monospace;
+   
+}
+
+.home-content h1{
+    font-size: 62px;
+    line-height: 1.2;
+    color: white;
+    position: absolute;
+    margin-left:10%;
+    top: 40%;
+    animation: slide-in-left 5s ease-out;
+    font-family: monospace;
+}
+@keyframes slide-in-left{
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+
+}
+100%{
+    transform: translateX(0);
+    opacity: 1;
+}
+}
+
+.home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: white;
+    position: absolute;
+    top: 65%;
+    margin-left: 5%;
+    font-family: monospace;
+    border: 3px double #ddd;
+    box-shadow: 0 0 25px orangered;
+
+
+}
+
+.social-links{
+    margin-left: 10%;
+    position: absolute;
+    top:85%;
+}
+
+.social-links a{
+    color:blanchedalmond;
+}
+
+.self{
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    margin-left: -85%;
+    top: 100%;
+    border-radius: 15%;
+    box-shadow: 0 0 20px white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+   
+
+}
+
+.myvid{
+    position: absolute;
+    margin-left: -2%;
+    top: 280%;
+    height: 70%;
+    width: 50;
+    
+}
+.My-intro{
+    top: 20%;
+    text-align: justify;
+    margin-left: -2%;
+    color: white;
+}
+.My-intro h2{
+    position: absolute;
+    color: orangered;
+    top: 90%;
+    margin-left: 13%;
+    background-color: white;
+    border: 1px dotted black;
+    
+
+}
+.My-intro p{
+    position: absolute;
+    color:black;
+    margin-left: 11%;
+    top: 150%;
+    right: auto;
+    text-align: justify;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    background-color: beige;
+}
+.My-intro1{
+    position: absolute;
+    color: white;
+    top: 420%;
+    margin-left: 35%;
+
+}
+.My-intro1 h3{
+    position: absolute;
+    color: orangered;
+    top: -90%;
+    margin-left: -20%;
+    background-color: white;
+    border: 1px dotted black;
+
+}
+.My-intro1 p{
+    
+    top: -200%;
+    margin-left: -20%;
+    text-align: justify;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    background-color: beige;
+    color: black;
+    }
+
+    .skillcontent{
+        position: absolute;
+        color: white;
+        top: 180%;
+        
+    
+        
+    }
+
+    .skillcontent h2{
+        position: absolute;
+        top: -50%;
+        color: red;
+        margin-left: 5%;
+        background-color: white;
+        border: 1px dotted black;
+    }
+    .skillcontent p{
+        top: 80%;
+        color: black;
+        text-align: justify;
+        font-family: Arial, Helvetica, sans-serif;
+        border: 3px double #ddd;
+        box-shadow: 0 0 15px orangered;
+        border-radius: 5%;
+        background-color: beige;
+
+    
+        
+        
+    }
+
+
+    .softkillcontent{
+        position: absolute;
+        top: 250%;
+        margin-left: 20%;
+        
+    }
+
+    .softkillcontent ul li{
+        color:black;
+        text-align: center;
+        margin-left: -45%;
+        border: 3px double #ddd;
+        box-shadow: 0 0 15px orangered;
+        border-radius: 10%;
+        background-color: beige;
+    
+    
+    }
+
+    .softkillcontent h2{
+        color: orangered;
+        position: absolute;
+        top: -65%;
+        margin-left: -35%;
+        
+    }
+
+    .technicalcontent{
+        position: absolute;
+        top: 250%;
+        margin-left: 75%;
+        
+
+    }
+
+    .technicalcontent h2{
+        color:orangered;
+        position: absolute;
+        top: -65%;
+        margin-left: -150%;
+        
+    
+    }
+
+    .technicalcontent ul li{
+        color:black;
+        text-align: center;
+        top: -50%;
+        margin-left: -200%;
+        border: 3px double #ddd;
+        box-shadow: 0 0 15px orangered;
+        background-color: beige;
+        border-radius: 10%;
+    
+        
+    
+    }
+
+    .educationcontent{
+        position: absolute;
+        color: white;
+        top: 220%;
+        margin-left: -10%;
+    }
+
+    .educationcontent h2{
+        position: absolute;
+        color:orangered;
+        top: -50%;
+        background-color: white;
+        border: 1px dotted black;
+    }
+
+    .educationcontent p{
+        color:black;
+        top: 50%;
+        text-align: left;
+        border: 3px double #ddd;
+        box-shadow: 0 0 10px orangered;
+        background-color: beige;
+        text-align: justify;
+       
+        
+    }
+    .gallery{
+        width: 900px;
+        display: flex;
+        overflow-x: scroll;
+    }
+    .gallery div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+        padding:10px;
+        flex:none;
+    }
+    .gallery div img{
+        width: 100%;
+        filter:grayscale(100%);
+        transition: transform 0.5s;
+    }
+    .gallery::-webkit-scrollbar{
+        display: none;
+    }
+    .gallery-wrap{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10% auto;
+    }
+    #backbtn, #nextbtn{
+        width: 50px;
+        cursor: pointer;
+        margin: 40px;
+        
+    }
+    .gallery div img:hover{
+        filter:grayscale(0);
+        cursor: pointer;
+        transform:scale(1.1);
+    }
+
+    
+
+ .edu{
+    position: absolute;
+    top: 355%;
+    margin-left: -10%;
+    text-align: justify;
+ }   
+
+ .edu h2{
+    color: orangered;
+    top: 50;
+    background-color: white;
+        border: 1px dotted black;
+ }
+ .edu ul{
+    color: black;
+    text-align: center;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    background-color: beige;
+    
+   
+   
+ }
+
+ .edu2{
+    position: absolute;
+    top: 500%;
+    
+ }
+ .edu2 p{
+    color: black;
+    text-align: left;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    background-color: beige;
+ }
+ .hobbiescontent{
+    position: absolute;
+    color: white;
+    margin-left: 20%;
+    text-align: left;
+    top: 150%;
+ }
+ .hobbiescontent h2{
+    position: absolute;
+    top:-30%;
+    left: -30%;
+    color: orangered;
+    background-color: white;
+    border: 1px dotted black;
+    
+ }
+ .hobbiescontent p{
+    margin-left: -35%;
+    top: -20%;
+    border: 3px double #ddd;
+        box-shadow: 0 0 15px orangered;
+        padding: 10px;
+        width: 110%;
+        border-radius: 5%;
+        background-color: beige;
+        color: black;
+        text-align: justify;
+ }
+ .hobbies2 ul{
+    color:black;
+    margin-left: -30%;
+    top:120%;
+    position: absolute;
+    border: 3px double #ddd;
+        box-shadow: 0 0 10px orangered;
+        border-radius: 5%;
+        background-color: beige;
+ }
+ .content3{
+    position: absolute;
+    top: 230%;
+    
+ }
+ .contentcontact{
+    position: absolute;
+    top: 100%;
+    color: white;
+    border: 3px solid white;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    border-radius: 5%;
+ }
+ .contentcontact1{
+    position: absolute;
+    top: 190%;
+    color: white;
+    text-align: left;
+    font-size: larger;
+ }
+ .contentcontact1 p{
+    margin-left: 1%;
+    font-size: large;
+    border: 3px double #ddd;
+        box-shadow: 0 0 10px orangered;
+        border-radius: 5%;
+ }
+.contentcontact2{
+        position: absolute;
+        top: 150%;
+        color: white;
+        text-align: left;
+        font-size: large;
+        
+}
+.contentcontact3{
+    position: absolute;
+    top: 160%;
+    color: white;
+   
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    border-radius: 5%;
+       
+}
+.contentcontact4{
+    position: absolute;
+    top: 170%;
+    color: white;
+    text-align: left;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    border-radius: 5%;
+}
+.info {
+    position: absolute;
+    top: 300%;
+}
+.info p{
+
+    background-color: beige;
+    color: black;
+    border: 3px double #ddd;
+    box-shadow: 0 0 10px orangered;
+    border-radius: 5%;
+}
+
+.image-square{
+    position: absolute;
+    top: 100%;
+    margin-left: -40%;
+}
